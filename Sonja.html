@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Geburtstagsgrüße mit Bildern</title>
+    <style>
+        /* Allgemeine Stile */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        /* Container für die Postkarte */
+        .postcard {
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            padding: 20px;
+            max-width: 500px;
+            text-align: center;
+        }
+
+        /* Stile für die Bilder */
+        .image-container {
+            display: flex;
+            flex-direction: column;
+            gap: 20px; /* Abstand zwischen den Zeilen */
+        }
+
+        .row {
+            display: flex;
+            gap: 20px; /* Abstand zwischen den Bildern */
+            justify-content: center; /* Bilder zentrieren */
+        }
+
+        .row img {
+            width: 200px; /* Breite der Bilder */
+            height: auto; /* Höhe automatisch anpassen */
+            border-radius: 10px; /* Abgerundete Ecken */
+        }
+
+        /* Stile für die Nachricht */
+        .message h1 {
+            font-size: 24px;
+            color: #333;
+        }
+
+        .message p {
+            font-size: 16px;
+            color: #666;
+        }
+
+        /* Responsive Design für kleinere Bildschirme */
+        @media (max-width: 600px) {
+            .row {
+                flex-direction: column; /* Bilder untereinander anzeigen */
+            }
+            .row img {
+                width: 100%; /* Bilder nehmen die volle Breite ein */
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="postcard">
+        <!-- Bilder -->
+        <div class="image-container">
+            <div class="row">
+                <img src="bild1.jpg" alt="Bild 1">
+                <img src="bild2.jpg" alt="Bild 2">
+            </div>
+            <div class="row">
+                <img src="bild3.jpg" alt="Bild 3">
+                <img src="bild4.jpg" alt="Bild 4">
+            </div>
+        </div>
+
+        <!-- Nachricht -->
+        <div class="message">
+            <h1>Alles Gute zum Geburtstag, meine liebe Sonja! 🎉</h1>
+            <p>Ich wünsche dir einen wundervollen Tag voller Glück, Liebe und Lachen. Du bist die Beste! ❤️</p>
+        </div>
+    </div>
+</body>
+</html>
